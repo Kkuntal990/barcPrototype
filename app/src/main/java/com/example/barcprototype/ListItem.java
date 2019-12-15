@@ -1,12 +1,15 @@
 package com.example.barcprototype;
 
+import android.media.Image;
+
 public class ListItem {
     private String name;
-    private String description;
+    private int iconId;
+    private boolean isSelected = false;
 
-    public ListItem(String name, String description) {
+    public ListItem(String name, int iconId) {
         this.name = name;
-        this.description = description;
+        this.iconId = iconId;
     }
 
     public String getName() {
@@ -17,11 +20,19 @@ public class ListItem {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
+    public int getIcon() {
+        return iconId;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setIcon(int iconId) {
+        this.iconId = iconId;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 }

@@ -10,12 +10,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.List;
+
 public class SelectShows extends AppCompatActivity {
     protected RecyclerView recyclerView;
     protected MyAdapter mAdapter;
     protected RecyclerView.LayoutManager layoutManager;
-    protected String[] mDataset;
     private Button nextBtn;
+    private String[] mDataset;
+    private int image = R.drawable.img_icon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +35,7 @@ public class SelectShows extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new MyAdapter(mDataset);
+        mAdapter = new MyAdapter(mDataset, image);
         recyclerView.setAdapter(mAdapter);
         nextBtn = (Button) findViewById(R.id.next);
         nextBtn.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +55,10 @@ public class SelectShows extends AppCompatActivity {
 
 
     private void initDataset() {
-        mDataset = new String[]{"one", "two", "three"};
+
+        mDataset = new String[10];
+        for (int i =0; i < 10; i++) {
+            mDataset[i] = "Cars " + i;
+        }
     }
 }
