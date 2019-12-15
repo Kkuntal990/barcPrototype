@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "802959883059",
+    "firebase_url": "https://barcremote.firebaseio.com",
+    "project_id": "barcremote",
+    "storage_bucket": "barcremote.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802959883059:android:a80db96c47e42e0d139c46",
+        "android_client_info": {
+          "package_name": "com.example.barcprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802959883059-oqhi4umv4nc0rm57rvoj2sbnbu3iequ9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.barcprototype",
+            "certificate_hash": "078f4d3bf78b7b0f0228034af9d08339567f4a77"
+          }
+        },
+        {
+          "client_id": "802959883059-ejik5eavg0m53essp4jv8curhg73tci5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLiLhSey4gFZZ1NlioHPj7prkSB-2Qvxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802959883059-ejik5eavg0m53essp4jv8curhg73tci5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
